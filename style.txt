@@ -12,7 +12,7 @@ header {
   background: #f3e9dc;
 }
 
-.logo {
+.gasha {
   max-width: 120px;
   margin-bottom: 1rem;
 }
