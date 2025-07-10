@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fffefc;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: #f3e9dc;
+}
+
+.gasha{
+  max-width: 120px;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.nav {
+  background: #ddd;
+  padding: 1rem;
+  text-align: center;
+}
+
+.nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.art-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  max-width: 300px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.art-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.art-item button {
+  background: #ff6f61;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.art-item button:hover {
+  background: #e85c50;
+}
+
+.about, .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  text-align: left;
+}
+
+.about section, .contact section {
+  max-width: 600px;
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form button {
+  margin-top: 1.5rem;
+  background-color: #ff6f61;
+  color: white;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+form button:hover {
+  background-color: #e85c50;
+}
+
+form p em {
+  display: block;
+  margin-top: 0.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f3e9dc;
+  font-size: 0.9rem;
+}
+
+/* Mobile-Friendly Responsive Design */
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .art-item {
+    width: 90%;
+  }
+
+  .about section, .contact section {
+    margin: 1rem;
+    padding: 1rem;
+    width: 90%;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .nav {
+    padding: 1rem 0.5rem;
+  }
+}
+
